@@ -41,3 +41,8 @@ transition:
 /* 変化するすべてのプロパティへの適用 */
 transition: all 0.5s ease-out;
 ```
+
+### 参考文献
+[MDN | transition](https://developer.mozilla.org/ja/docs/Web/CSS/transition)  
+[手軽なCSSアニメーション！transitionプロパティの使い方（基礎編）](https://www.asobou.co.jp/blog/web/css-animation3)  
+[CSS Transition完全ガイド！基本から応用まで徹底解説](https://www.sejuku.net/blog/226145)
