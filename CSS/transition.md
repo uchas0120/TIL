@@ -5,7 +5,7 @@
 ## 書き方
 **共通事項：プロパティや秒数を複数指定する場合はカンマ区切りで記述する。**
 - `transition-property`：効果を付けたいプロパティを指定する。  
-例：`〇〇{transition-property:background-color;}`  
+例：`〇〇{transition-property: background-color;}`  
 **※対象のプロパティは記載すること。記載しない、もしくはallだと将来的に追記したプロパティにも作用してしまうため。**  
 
 - `transition-duration`：変化が完了するまでの時間を指定する。  
