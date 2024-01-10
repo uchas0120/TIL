@@ -25,3 +25,8 @@
     基準はビューポート（画面）。
 
   - `sticky`：通常時はabsoluteと同じ。スクロールして画面外に出そうになるとfixedのように固定される。
+
+### 参考文献
+[MDN | position](https://developer.mozilla.org/ja/docs/Web/CSS/position)  
+[CSSのpositionを総まとめ！absoluteやfixedの使い方は？](https://saruwakakun.com/html-css/basic/relative-absolute-fixed)  
+[【CSS】position使い方まとめ！種類一覧と注意点も解説](https://jajaaan.co.jp/web-production/frontend/position/)
