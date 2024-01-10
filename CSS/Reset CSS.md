@@ -1,4 +1,4 @@
-ブラウザごとに微妙にCSSのデフォルトの値（widthやheight、font-sizeなど）が違うため、初期化するのが好ましい。  
+ブラウザごとに微妙にCSSのデフォルトの値（widthやheight、font-sizeなど）が違うため、まず初めに初期化するのが好ましい。  
 その場合は以下を丸っとCSSファイルに記述する。
 ```
 /* http://meyerweb.com/eric/tools/css/reset/ 
