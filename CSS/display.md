@@ -11,8 +11,14 @@
 幅と高さを指定できない。
 上下のmarginの指定はできない。
 
-- `inline-block`：配置はinlineのように横並びになるが、性質はblock。
+- `inline-block`：配置はinlineのように横並びになるが、性質はblock。\
 
+- `none`：要素を非表示にする。
+存在を消すような感じなので画面には表示されず、高さや幅もない。
+
+- `flex`：記述した子要素を横や縦に並べることが出来る。
+  flexを記述した子要素はコンテナのようなものに入れられ、その中で並び方を変えられるようになるイメージ。
+  これをフレックスボックスという。
 
 ### 【block、inline、inline-blockの違い】
 ![bdr44405-O4HRWW-07-min](https://github.com/uchas0120/TIL/blob/main/images/bdr44405-O4HRWW-07-min.png)
