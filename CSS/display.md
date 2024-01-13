@@ -3,12 +3,17 @@
 ブロック要素にしたりインライン要素にしたり、要素の状態や並びを変更したりできる。
 
 ## 値
-- block：要素をブロック要素にする。
+- `block`：要素をブロック要素にする。
 ブロック要素の初期値に設定されている。
 
-- inline：要素をインライン要素にする。
+- `inline`：要素をインライン要素にする。
 インライン要素の初期値に設定されている。
 幅と高さを指定できない。
 上下のmarginの指定はできない。
-![bdr44405-O4HRWW-07-min](https://github.com/uchas0120/TIL/assets/152408430/4720832e-9293-4101-a95b-f8c2f5985ebb)
+
+- `inline-block`：配置はinlineのように横並びになるが、性質はblock。
+
+
+### 【block、inline、inline-blockの違い】
+![bdr44405-O4HRWW-07-min](https://github.com/uchas0120/TIL/blob/main/images/bdr44405-O4HRWW-07-min.png)
 
