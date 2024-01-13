@@ -90,6 +90,8 @@
 #### ■`align-self`：
 `align-items`を個別に設定できる。
 
+![rofzm44oka091_3](https://github.com/uchas0120/TIL/assets/152408430/692e07e1-858e-4321-99b5-bb95e379bd81)
+
 ---
 
 ### 余白の指定方法
