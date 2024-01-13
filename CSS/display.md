@@ -14,7 +14,7 @@
 - `inline-block`：配置は`inline`のように横並びになるが、性質は`block`。
 
 #### 【block、inline、inline-blockの違い】
-![bdr44405-O4HRWW-07-min](https://github.com/uchas0120/TIL/blob/main/images/bdr44405-O4HRWW-07-min.png)
+![bdr44405-O4HRWW-07-min](https://github.com/uchas0120/TIL/blob/main/images/bdr44405-O4HRWW-07-min_1.png)
 
 - `none`：要素を非表示にする。  
 存在を消すような感じなので画面には表示されず、高さや幅もない。
