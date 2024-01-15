@@ -148,10 +148,10 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia tenetur unde moles
 ```
 
 ### 備考
-CSSでの省略記法もあるが、詳しくは下記に記載されているため要参照。
+CSSでの省略記法もあるが、詳しくは下記に記載されているため要参照。  
 [cheat-sheet](https://docs.emmet.io/cheat-sheet/)
 
 #### 参照
 [爆速コーディング！Emmetの使い方・書き方とVSCodeの設定を解説](https://junpei-sugiyama.com/emmet/#st-toc-h-12)  
 [Emmetとは？これだけ知っておけばOK！](https://zenn.dev/miz_dev/articles/6cac5f2e32398d)  
-[]()
+[【VSCodeでEmmet入門】 Emmetを使ってHTMLコーディングを効率化しよう。](https://technical-creator.com/vscode-emmet/#%E6%9B%B8%E3%81%84%E3%81%A6%E3%81%82%E3%82%8BHTML%E3%81%AE%E5%A4%96%E5%81%B4%E3%81%ABHTML%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%99%E3%82%8B)
