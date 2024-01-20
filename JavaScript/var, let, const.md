@@ -86,4 +86,14 @@ if (true) {
 }
 ```
 
-## 結局何を使ったらいいのか
+## 結局何を使用するのがいいのか
+基本はconst、for文などの繰り返し構文などで再代入が必要な場合はletを使用する。  
+varは下記の特徴から思わぬ上書きや巻き上げ時のバグが発生する可能性から使わない方がよい。
+- 再宣言や再代入ができるため、同じスコープや下層のスコープ内で何度も宣言や代入が可能。
+- 変数の巻き上げによってエラーを吐かない。
+
+#### 参考
+[【JavaScript】let、const、varの違いと使い分け方法を徹底解説](https://techplay.jp/column/1619)  
+[const, var, let の違いをざっくりメモ](https://qiita.com/Lyn131/items/6c2d3dab541d65eb1897)  
+[【javascript】var / let / constの違いや使い分け方を初心者向けに徹底解説！](https://tagnote.net/javascript/let_var_const-js/#%E6%9C%80%E5%BE%8C%E3%81%AB)  
+[]()  
