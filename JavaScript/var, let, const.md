@@ -96,4 +96,4 @@ varは下記の特徴から思わぬ上書きや巻き上げ時のバグが発�
 [【JavaScript】let、const、varの違いと使い分け方法を徹底解説](https://techplay.jp/column/1619)  
 [const, var, let の違いをざっくりメモ](https://qiita.com/Lyn131/items/6c2d3dab541d65eb1897)  
 [【javascript】var / let / constの違いや使い分け方を初心者向けに徹底解説！](https://tagnote.net/javascript/let_var_const-js/#%E6%9C%80%E5%BE%8C%E3%81%AB)  
-[]()  
+[【javascript】変数と定数のスコープについて初心者向けに徹底解説！](https://tagnote.net/javascript/scope-js/)  
