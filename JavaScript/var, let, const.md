@@ -56,3 +56,20 @@ function myFunc() {
 }
 ```
 
+### 巻き上げ
+変数の有効範囲が宣言を行う前にも及ぶことです。  
+javascriptでは、スコープの中で宣言した変数はスコープの先頭で宣言されたものとみなされる。(代入はされない。)
+下記の例では、一つ上の階層の「1」は出力されず、エラーが発生している。  
+これは、`let test = 2;`の`let test;`が巻き上げられているからです。  
+※エラーは「初期化前に「test」にアクセスできません」です。
+```
+if (true) {
+    let test = 1;
+    console.log(test); // 1
+
+    if (true) {
+        console.log(test); // ReferenceError: Cannot access 'test' before initialization
+        let test = 2;
+    }
+}
+```
