@@ -1,4 +1,3 @@
-0
 ## 要素を追加、削除するメソッド(push/pop/unshift/shift/splice)
 ```javascript
 const nums = [1, 2, 3, 4, 5];
