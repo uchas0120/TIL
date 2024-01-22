@@ -56,8 +56,18 @@ nums.sort(); // [1, 100, 2, 4, 5]
 
 ## 要素の検索
 ```javascript
+const nums = [1, 2, 3, 4, 5];
 
+// includes()：特定の要素が配列に含まれているかどうかを true または false で返す。
+nums.includes(2); // true
+
+// indexOf()：引数に与えられた内容と同じ内容を持つ最初の配列要素の添字を返す。存在しない場合は -1 を返す。
+nums.indexOf(5); // 4
 ```
 
+---
+#### 参考
+[MDN](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf)  
+[Arrayの基礎知識と各メソッドの使用方法](https://qiita.com/sh19910711/items/3c0776fd8cc1797f955d)
 
 
