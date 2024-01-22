@@ -1,17 +1,12 @@
 ## 要素を追加、削除するメソッド(push/pop/unshift/shift/splice)
 ```
-- push
-末尾に追加する。
-
 const nums = [1, 2, 3];
+
+// 末尾に追加する。
 nums.push(4);
 nums; //  [1, 2, 3, 4]
 
-
-- pop
-末尾を取り除く。
-
-const nums = [1, 2, 3];
+// 末尾を取り除く。
 nums.pop();
 nums; //  [1, 2]
 
