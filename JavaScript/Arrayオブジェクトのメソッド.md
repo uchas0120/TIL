@@ -1,3 +1,4 @@
+0
 ## 要素を追加、削除するメソッド(push/pop/unshift/shift/splice)
 ```javascript
 const nums = [1, 2, 3, 4, 5];
@@ -41,6 +42,13 @@ nums.slice(1,4); // [2, 3, 4]
 ```
 ## 並べ替えのメソッド
 ```javascript
+const nums = [1, 2, 3, 4, 5];
+
+// reverse()：反転させる。
+nums.reverse();
+nums; // [5, 4, 3, 2, 1]
+
+// sort()：並べ替える。
 
 ```
 
