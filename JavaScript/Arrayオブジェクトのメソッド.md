@@ -2,13 +2,13 @@
 ```javascript
 const nums = [1, 2, 3];
 
-// 末尾に追加する。
+// push：末尾に追加する。
 nums.push(4);
 nums; //  [1, 2, 3, 4]
 
-// 末尾を取り除く。
+// pop：末尾を取り除く。
 nums.pop();
-nums; //  [1, 2]
+nums; //  [1, 2, 3]
 
 
 - unshift
