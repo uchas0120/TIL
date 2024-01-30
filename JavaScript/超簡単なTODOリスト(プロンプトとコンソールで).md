@@ -4,9 +4,10 @@
 
 ```javascript
 
+let input = prompt('コマンドを入力してください。(new、list、delete、quit)');
 let lists = [];
 while (input !== 'quit' && input !== 'q') {
-    const input = prompt('コマンドを入力してください。(new、list、delete、quit)');
+    
 
     if (input === 'new') {
     const task = prompt('タスクを登録してください。');
@@ -37,6 +38,7 @@ while (input !== 'quit' && input !== 'q') {
             window.alert('有効なインデックスを入力シロ！');
         }
     }
+    input = prompt('コマンドを入力してください。(new、list、delete、quit)');
 }
 
 console.log('糸冬');
