@@ -21,7 +21,7 @@ while (input !== 'quit' && input !== 'q') {
             }
             console.log(`${i} : ${lists[i]}`);
             if (i === lists.length -1) {
-                console.log('**************************************');;
+                console.log('**************************************');
             }
         }      
         window.alert('タスク一覧です。');
