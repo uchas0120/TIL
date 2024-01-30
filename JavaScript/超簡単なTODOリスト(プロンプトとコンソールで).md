@@ -6,8 +6,7 @@
 
 let input = prompt('コマンドを入力してください。(new、list、delete、quit)');
 let lists = [];
-while (input !== 'quit' && input !== 'q') {
-    
+while (input !== 'quit' && input !== 'q') { // quitでもqでもないときに処理を続ける。
 
     if (input === 'new') {
     const task = prompt('タスクを登録してください。');
