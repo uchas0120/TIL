@@ -5,7 +5,7 @@
 ```javascript
 
 let lists = [];
-while (true) {
+while (input !== 'quit' && input !== 'q') {
     const input = prompt('コマンドを入力してください。(new、list、delete、quit)');
 
     if (input === 'new') {
@@ -37,9 +37,8 @@ while (true) {
             window.alert('有効なインデックスを入力シロ！');
         }
     }
-    
-    else if (input === 'quit' || input === 'q'){break;}
 }
 
-console.log('アプリを終了しました。');
+console.log('糸冬');
+
 ```
