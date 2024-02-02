@@ -79,8 +79,16 @@ number.forEach(function(num) {
 // four
 // five
 ```
-
-
+### mapメソッド
+与えられた関数を配列のすべての要素に対して呼び出し、その結果(return)からなる新しい配列を生成する。  
+forEachとほとんど同じだが、returnしてその結果から新たな配列を生成できる点が違う。  
+```javascript
+const fullName = [{first: 'Albus', last: 'Dumbledore'}, {first: 'Harry', last: 'Potter'}, {first: 'Hermione', last: 'Granger'}, {first: 'Ron', last: 'Weasley'}, {first: 'Rubeus', last: 'Hagrid'}];
+const firstName = fullName.map(function (fName) {
+    return fName.first; // firstName変数の中にreturnの結果が入る。
+})
+console.log('firstName'); //  ['Albus', 'Harry', 'Hermione', 'Ron', 'Rubeus']
+```
 ---
 #### 参考
 [MDN](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf)  
