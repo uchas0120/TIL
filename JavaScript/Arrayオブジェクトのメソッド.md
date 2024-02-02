@@ -89,6 +89,18 @@ const firstName = fullName.map(function (fName) {
 })
 console.log('firstName'); //  ['Albus', 'Harry', 'Hermione', 'Ron', 'Rubeus']
 ```
+### filterメソッド
+コールバック関数の処理の中で`true`になる値のみを新しい配列として作成する。  
+既存の配列は変更されない。
+```javascript
+const hightNum = numbers.filter( num => {
+    return num >= 110;
+})
+hightNum;    // [500, 1000]
+```
+
+
+
 ---
 #### 参考
 [MDN](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf)  
