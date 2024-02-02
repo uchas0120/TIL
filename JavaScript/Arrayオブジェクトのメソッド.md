@@ -98,6 +98,7 @@ const hightNum = numbers.filter( num => {
 })
 hightNum;    // [500, 1000]
 ```
+### reduceメソッド
 
 
 
