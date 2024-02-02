@@ -63,6 +63,23 @@ nums.includes(2); // true
 // indexOf()：引数に与えられた内容と同じ内容を持つ最初の配列要素の添字を返す。存在しない場合は -1 を返す。
 nums.indexOf(5); // 4
 ```
+## その他の便利メソッド
+### forEachメソッド
+コールバック関数を受け取り、配列の要素毎に関数が呼ばれる。
+for...of構文と同じ動作をする。  
+```javascript
+const number = ['one', 'two', 'three', 'four', 'five'];
+number.forEach(function(num) {
+    console.log(num);
+})
+
+// one
+// two
+// three
+// four
+// five
+```
+
 
 ---
 #### 参考
