@@ -94,3 +94,18 @@ const list = document.querySelector('li');
 console.log(list.nextElementSibling);   // <li>::marker "Two"</li>
 ```
 `previousSibling` および `previousElementSibling` プロパティでは、前（上）に隣り合う要素を取得できる。
+
+### 取得した要素の中身の確認方法
+取得した要素は新しいオブジェクトとして作成され、配下にはプロパティ名がデフォルトでたくさん設定されている。
+```html
+<p>テスト</p>
+```
+```javascript
+const test = document.querySelector('p');
+console.dir(test);
+   //  p(配下には大量のプロパティ)
+```
+中には`style`プロパティも存在しているため、プロパティの変更も可能。
+```javascript
+test.style.color = 'red';
+```
