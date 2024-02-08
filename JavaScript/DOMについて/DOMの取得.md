@@ -62,18 +62,35 @@ const container = p.parentNode;
   <li>Three</li>
 </ul>
 ```
-`childNodes`はNodeList オブジェクトが返される。  
+- `childNodes`：NodeList オブジェクトが返される。  
 テキストノード(改行やタブなどのタグ以外の文字データ)も含まれる。  
 孫やそれ以降のノードは含まれない。
 ```javascript
 const list = document.querySelector('ul');
-const listItems = list.childNodes;
-listItems;   // NodeList(7) [text, li, text, li, text, li, text]
+console.log(list.childNodes);   // NodeList(7) [text, li, text, li, text, li, text]
 ```
-`children`は テキストノードは含まずに HTML 要素のみの一覧（HTMLCollection）を返す。
+- `children`：テキストノードは含まずに HTML 要素のみの一覧（HTMLCollection）を返す。
 ```javascript
-const listItems = list.children;
-listItems   // HTMLCollection(3) [li, li, li]
+console.log(list.children);    // HTMLCollection(3) [li, li, li]
 ```
 
 ### 兄弟要素の取得
+```html
+<ul>
+  <li>One</li>
+  <li>Two</li>
+  <li>Three</li>
+</ul>
+```
+- `nextSibling`：次（下）に隣り合うノードを取得する。
+改行やホワイトスペースも、テキストノードの形で DOM の一部に組み込まれるため、次の`li`ではなく空白のテキストノードが返される。
+```javascript
+const list = document.querySelector('li');
+console.log(list.nextSibling);   // #text
+```
+- `nextElementSibling`：テキストノードを除いた次の要素を取得できる。
+```javascript
+const list = document.querySelector('li');
+console.log(list.nextElementSibling);   // <li>::marker "Two"</li>
+```
+`previousSibling` および `previousElementSibling` プロパティでは、前（上）に隣り合う要素を取得できる。
