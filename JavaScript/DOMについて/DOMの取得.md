@@ -44,3 +44,14 @@ document.querySelectorAll('p');
 //  length: 2
 //  [[Prototype]]: NodeList
 ```
+#### 親要素の取得
+- parentNode
+```html
+<div class="container">
+   <p>親要素を取得する</p>
+</div>
+```
+```javascript
+const p = document.querySelector('p');
+const container = p.parentNode;
+```
