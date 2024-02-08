@@ -11,21 +11,22 @@ DOM が書き換えられると、自動的に画面の内容が新たな DOM �
 Javascriptで DOM の操作をする方法を順番に記載していく。
 ### DOMの取得
 #### ID,タグ,クラス属性による検索
-- getElementById：引数に指定された id 属性を持つ要素ノードを、DOM 全体から検索する。id なので単一のノードを返す。
+- getElementById：引数に指定された id 属性を持つ要素ノードを、DOM 全体から検索する。id なので**単一の要素を返す。**
 ```javascript
 const text = document.getElementById('text');
 ```
-- getElementsByTagName：引数に指定されたタグを持つ要素ノードを、DOM 全体から検索し、一致する要素すべてを返す。
+- getElementsByTagName：引数に指定されたタグを持つ要素ノードを、DOM 全体から検索し、**一致する要素すべてを返す。**
 ```javascript
 const text = document.getElementsByTagName('p');
 ```
-- getElementsByClassName：引数に指定されたクラスを持つ要素ノードを、DOM 全体から検索し、一致する要素すべてを返す。
+- getElementsByClassName：引数に指定されたクラスを持つ要素ノードを、DOM 全体から検索し、**一致する要素すべてを返す。**
 ```javascript
 const text = document.getElementsByClassName('texts');
 ```
 
 #### セレクターによる検索
-- querySelector
+- querySelector：セレクター文字列を引数に取り、合致する要素を検索する。HTML文書を上から順に検索していき、一番最初に見つけた要素を返す。  
+このセレクター文字列は、CSS で用いるセレクターと同じ。id なら`#`を、class なら`.`を付ける。
 ```javascript
-
+const text = document.querySelector('#text');
 ```
