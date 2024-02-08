@@ -21,12 +21,26 @@ const text = document.getElementsByTagName('p');
 ```
 - getElementsByClassName：引数に指定されたクラスを持つ要素ノードを、DOM 全体から検索し、**一致する要素すべてを返す。**
 ```javascript
-const text = document.getElementsByClassName('texts');
+const text = document.getElementsByClassName('text');
 ```
 
 #### セレクターによる検索
-- querySelector：セレクター文字列を引数に取り、合致する要素を検索する。HTML文書を上から順に検索していき、一番最初に見つけた要素を返す。  
+- querySelector：セレクター文字列を引数に取り、合致する要素を検索する。HTML文書を上から順に検索していき、**一番最初に見つけた要素を返す。**  
 このセレクター文字列は、CSS で用いるセレクターと同じ。id なら`#`を、class なら`.`を付ける。
 ```javascript
 const text = document.querySelector('#text');
+```
+- querySelectorAll：セレクター文字列を引数に取り、合致する要素を検索する。合致した要素をすべて返す。
+具体的には、NodeList オブジェクトが返される。
+```javascript
+const text = document.querySelectorAll('.text');
+```
+NodeList はノードのコレクション（いくつか集まったもの）です。配列のようなイメージだが、厳密には違う。
+```javascript
+document.querySelectorAll('p');
+// NodeList(2) [p, p]
+//  0: p
+//  1: p
+//  length: 2
+//  [[Prototype]]: NodeList
 ```
