@@ -11,26 +11,26 @@ DOM が書き換えられると、自動的に画面の内容が新たな DOM �
 Javascriptで DOM の操作をする方法を順番に記載していく。
 ### DOMの取得
 #### ID,タグ,クラス属性による検索
-- getElementById：引数に指定された id 属性を持つ要素ノードを、DOM 全体から検索する。id なので**単一の要素を返す。**
+- `getElementById`：引数に指定された id 属性を持つ要素ノードを、DOM 全体から検索する。id なので**単一の要素を返す。**
 ```javascript
 const text = document.getElementById('text');
 ```
-- getElementsByTagName：引数に指定されたタグを持つ要素ノードを、DOM 全体から検索し、**一致する要素すべてを返す。**
+- `getElementsByTagName`：引数に指定されたタグを持つ要素ノードを、DOM 全体から検索し、**一致する要素すべてを返す。**
 ```javascript
 const text = document.getElementsByTagName('p');
 ```
-- getElementsByClassName：引数に指定されたクラスを持つ要素ノードを、DOM 全体から検索し、**一致する要素すべてを返す。**
+- `getElementsByClassName`：引数に指定されたクラスを持つ要素ノードを、DOM 全体から検索し、**一致する要素すべてを返す。**
 ```javascript
 const text = document.getElementsByClassName('text');
 ```
 
 #### セレクターによる検索
-- querySelector：セレクター文字列を引数に取り、合致する要素を検索する。HTML文書を上から順に検索していき、**一番最初に見つけた要素を返す。**  
+- `querySelector`：セレクター文字列を引数に取り、合致する要素を検索する。HTML文書を上から順に検索していき、**一番最初に見つけた要素を返す。**  
 このセレクター文字列は、CSS で用いるセレクターと同じ。id なら`#`を、class なら`.`を付ける。
 ```javascript
 const text = document.querySelector('#text');
 ```
-- querySelectorAll：セレクター文字列を引数に取り、合致する要素を検索する。合致した要素をすべて返す。
+- `querySelectorAll`：セレクター文字列を引数に取り、合致する要素を検索する。合致した要素をすべて返す。
 具体的には、NodeList オブジェクトが返される。
 ```javascript
 const text = document.querySelectorAll('.text');
@@ -39,13 +39,10 @@ NodeList はノードのコレクション（いくつか集まったもの）�
 ```javascript
 document.querySelectorAll('p');
 // NodeList(2) [p, p]
-//  0: p
-//  1: p
-//  length: 2
-//  [[Prototype]]: NodeList
 ```
+
 #### 親要素の取得
-- parentNode
+`parentNode`
 ```html
 <div class="container">
    <p>親要素を取得する</p>
@@ -55,3 +52,28 @@ document.querySelectorAll('p');
 const p = document.querySelector('p');
 const container = p.parentNode;
 ```
+
+### 子要素の取得
+`childNodes` 、`children`
+```html
+<ul>
+  <li>One</li>
+  <li>Two</li>
+  <li>Three</li>
+</ul>
+```
+`childNodes`はNodeList オブジェクトが返される。  
+テキストノード(改行やタブなどのタグ以外の文字データ)も含まれる。  
+孫やそれ以降のノードは含まれない。
+```javascript
+const list = document.querySelector('ul');
+const listItems = list.childNodes;
+listItems;   // NodeList(7) [text, li, text, li, text, li, text]
+```
+`children`は テキストノードは含まずに HTML 要素のみの一覧（HTMLCollection）を返す。
+```javascript
+const listItems = list.children;
+listItems   // HTMLCollection(3) [li, li, li]
+```
+
+### 兄弟要素の取得
