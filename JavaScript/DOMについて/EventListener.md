@@ -4,7 +4,9 @@
 (MDN | イベントリファレンス)[https://developer.mozilla.org/ja/docs/Web/Events]  
 
 ## addEventLisntener
-ターゲットに特定のイベントが配信されるたびに呼び出される関数(イベントハンドラ)を設定します。 
+ターゲットに特定のイベントが配信されるたびに呼び出される関数(イベントハンドラ)を設定します。   
+イベントハンドラは複数設定することができます。  
+また、オプションも設定できるため、`onclick`などでイベントを記述するよりも柔軟に処理を決めることが出来ます。
 #### 書き方
 ```javascript
 対象要素.addEventListener( イベントの種類, 関数, options )
@@ -25,4 +27,4 @@ button.addEventListener('click', () => {
     console.log('クリックしました！！');
 });
 ```
-イベントハンドラは複数設定することができます。
+
