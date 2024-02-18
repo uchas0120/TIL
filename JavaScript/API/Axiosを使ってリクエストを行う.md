@@ -10,43 +10,26 @@
 
 ## 実際にリクエストを行う
 icanhazdadjokeというアメリカンジョークを自動で生成してくれるサイトにリクエストを行います。
+```html
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axios</title>
+</head>
+<body>
+<h1>クリックでジョーク</h1>
+<button>クリック</button>
+<ul id="jokes"></ul>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
+```
+
 ```javascript
-axios.get('https://swapi.dev/api/people/1/')
-.then(res => console.log('success', res))
-.catch(e => console.log('error', e));
 
-const getStarWarsPerson = async (id) => {
-    try{
-    const res = await axios.get('https://swapi.dev/api/people/1/');
-    console.log(res.data);
-    } catch (e) {
-        console.log('error', e);
-    }
-}
-
-const jokes = document.querySelector('#jokes');
-const button = document.querySelector('button');
-
-const getDadjoke = async () => {
-    try{
-    const config = {
-        headers: {
-        Accept: 'application/json'
-        }
-    };
-    const res = await axios.get('https://icanhazdadjoke.com/', config);
-    return res.data.joke;
-    } catch (e) {
-        alert('Jokes NOT FOUND')
-    }
-}
-
-const addNewJoke = async () => {
-    const jokeText = await getDadjoke();
-    const newLi = document.createElement('LI');
-    newLi.append(jokeText);
-    jokes.append(newLi);
-}
-
-button.addEventListener('click', addNewJoke);
 ```
