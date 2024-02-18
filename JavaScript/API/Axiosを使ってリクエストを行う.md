@@ -20,8 +20,8 @@ icanhazdadjokeというアメリカンジョークを自動で生成してくれ
     <title>Axios</title>
 </head>
 <body>
-<h1>クリックでジョーク</h1>
-<button>クリック</button>
+<h1>クリックでジョークを作成</h1>
+<button>作成</button>
 <ul id="jokes"></ul>
 
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
