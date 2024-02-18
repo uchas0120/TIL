@@ -9,7 +9,7 @@
 - リクエストをキャンセル
 
 ## 実際にリクエストを行う
-icanhazdadjokeというアメリカンジョークを自動で生成してくれるサイトにリクエストを行います。
+[icanhazdadjoke](https://icanhazdadjoke.com/api#api-response-format)というアメリカンジョークを自動で生成してくれるサイトにリクエストを行います。
 ```html
 <!DOCTYPE html>
 <html lang="ja">
