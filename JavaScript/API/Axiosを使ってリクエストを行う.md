@@ -31,5 +31,36 @@ icanhazdadjokeというアメリカンジョークを自動で生成してくれ
 ```
 
 ```javascript
+const jokes = document.querySelector('#jokes');
+const button = document.querySelector('button');
 
+// axios.getメソッドでリクエストして取ってきたデータ(ジョークの内容)を返す関数の作成。
+const getDadjoke = async () => {
+    // リクエストが成功したときの処理。
+    try{
+    // json形式で値を返すようにヘッダーの値を変更。
+    const config = {
+        headers: {
+        Accept: 'application/json'
+        }
+    };
+    // axiosでリクエストをするとpromiseが返ってくる。
+    const res = await axios.get('https://icanhazdadjoke.com/', config);
+    return res.data.joke;
+
+    // リクエストが失敗したときの処理。
+    } catch (e) {
+        alert('Jokes NOT FOUND')
+    }
+}
+
+// ジョークの内容をDOM操作でHTMLに追加する関数。
+const addNewJoke = async () => {
+    const jokeText = await getDadjoke();
+    const newLi = document.createElement('LI');
+    newLi.append(jokeText);
+    jokes.append(newLi);
+}
+
+button.addEventListener('click', addNewJoke);
 ```
