@@ -25,7 +25,6 @@ method2() {
 }
 ```
 ## 実際に使ってみる
-
 ```javascript
 class Myname {
     constructor(firstName, lastName) {
@@ -46,3 +45,9 @@ const name1 = new Myname('Hermione', 'Granger');
 name1.fullName();
 // 'My name is Hermione Granger.'
 ```
+`Myname`というクラスを作成しました。  
+クラスの中で定義されたfullName関数はちゃんとprototypeオブジェクトの中にあります。  
+`name1`を見てみるとそれがわかると思います。
+
+#### 参考
+[【徹底解説】JavaScriptのclassを理解する](https://qiita.com/asameshiCode/items/4c710ae94242f8bbe890)
