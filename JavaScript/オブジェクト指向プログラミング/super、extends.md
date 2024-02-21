@@ -16,15 +16,17 @@ class Dormitory{
 	}
 }
 
+// extendsキーワードでDormitoryクラスを継承
 class Gryffindor extends Dormitory{
 password() {
 		return 'フォルチュナ・マジョール';
 	}
 }
 
-class Hufflepuff extends Dormitory{
-	barrel() {
-		return '樽の2列目真ん中の底を2回「ヘルガ・ハッフルパフ」のリズムで叩く。';
-	}
-}
+const hermione = new Gryffindor('Hermione Granger', 11);
+hermione.who();
+// 私はHermione Granger、11歳です。
 ```
+まず親となる`Dormitory`クラスを定義し、コンストラクタとメソッドを記述します。  
+次に子となる`Gryffindor`クラスを定義し、`extends`キーワードで`Dormitory`クラスを継承します。  
+そうすることで、`Gryffindor`クラスでも`who`メソッドが利用できるようになります。
