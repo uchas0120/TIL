@@ -35,11 +35,19 @@ exports.square = square;
 ## require
 公開したものを読み込んで使いたい場合、`require`を使います。  
 書き方は以下です。  
-`const 変数 = require(パッケージ名)`
-パスを書くときは相対パスで書くようにします。
+`const 変数 = require(パッケージ名)`  
+パスを書くときは相対パスで書くようにします。  
 `const 変数 = require(モジュールのファイルパス)`
 例
 ```javascript
 const math = require('./math');
 console.log(math.square(9));
 ```
+
+- 分割代入も可能です
+```javascript
+const { add, square } = require('./math');
+console.log(square(9));
+```
+
+
