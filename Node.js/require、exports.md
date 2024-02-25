@@ -5,7 +5,7 @@
 まず、使いたい関数などを定義しているファイルを`exports`で公開する必要があります。  
 `module.exports`で中に使いたいものを入れます。  
 `module.exports`はオブジェクトのため、中に入れることが出来ればいいので様々な書き方があります。
-```javascript:math.js
+```javascript;math.js
 // 関数を定義
 const add = (x, y) => x + y;
 const square = x => x * x;
