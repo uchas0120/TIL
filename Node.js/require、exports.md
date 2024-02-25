@@ -25,8 +25,8 @@ const math = {
 module.exports = math;
 ```
 - module.は省略してもOKです。  
-　理由は、`exports = module.exports`と`export`に代入されているからです。  
-　そのため`exports`の中身を変えてしまうと動作しません。
+理由は、`exports = module.exports`と`export`に代入されているからです。  
+そのため`exports`の中身を変えてしまうと動作しません。
 ```javascript
 exports.add = add;
 exports.square = square;
