@@ -17,6 +17,7 @@ module.exports.square = square;
 ```
 #### 他の記述方法
 - exportsオブジェクトにオブジェクトを入れてもOKです
+  math.js
 ```javascript
 const math = {
     add: add,
@@ -38,7 +39,7 @@ exports.square = square;
 `const 変数 = require(パッケージ名)`  
 パスを書くときは相対パスで書くようにします。  
 `const 変数 = require(モジュールのファイルパス)`
-例
+例：app.js
 ```javascript
 const math = require('./math');
 console.log(math.square(9));
@@ -49,5 +50,9 @@ console.log(math.square(9));
 const { add, square } = require('./math');
 console.log(square(9));
 ```
-
-
+### 実行結果
+ファイルを実行すると、`square(9)`の結果が出力されます。
+```
+>node app.js
+81
+```
