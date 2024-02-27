@@ -69,37 +69,41 @@ Node.js を使ってWebアプリケーションを開発する上で、express �
     });
     ```
 1. package.jsonにstartコマンドを追加(やらなくても`node index.js`で起動できます。)
-```javascript
-{
-  "name": "my-express-project",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.18.2"
-  }
-}
-```
+    ```javascript
+    {
+      "name": "my-express-project",
+      "version": "1.0.0",
+      "description": "",
+      "main": "index.js",
+      "scripts": {
+        "start": "node index.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+      },
+      "keywords": [],
+      "author": "",
+      "license": "ISC",
+      "dependencies": {
+        "express": "^4.18.2"
+      }
+    }
+    ```
 ### 動作確認
 1. サーバー起動
-```
->npm start
->node index.js ←package.jsonにstartコマンドを追加していない場合
-リクエストをポート3000で待受中...
-```
+    ```
+    >npm start
+    >node index.js ←package.jsonにstartコマンドを追加していない場合
+    リクエストをポート3000で待受中...
+    ```
 1. 起動確認
-curl コマンドを使用してサーバの実行を確認します。  
-ブラウザのURL欄に`http://localhost:3000`を入力しても同じ結果が得られます。  
-```
->curl http://localhost:3000
-ここはホームページです
-```
+    curl コマンドを使用してサーバの実行を確認します。  
+    ブラウザのURL欄に`http://localhost:3000`を入力しても同じ結果が得られます。  
+    ```
+    >curl http://localhost:3000
+    ここはホームページです
+    ```
 1. サーバ停止
-ctrl + c でサーバを停止できます。
+    ctrl + c でサーバを停止できます。
+
+
+### 参考
+[Express.js完全入門](https://qiita.com/ryome/items/16659012ed8aa0aa1fac)
