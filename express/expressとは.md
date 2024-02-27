@@ -26,18 +26,18 @@ Node.js を使ってWebアプリケーションを開発する上で、express �
 ### 環境構築
 1. プロジェクトの作成
 1. expressのインストール
-```
->mkdir express-project
->cd express-project
->npm init --yes
->npm install express
->touch index.js
-```
-1. サーバーの作成
-以下コートでサーバーの作成をします。
-```javascript
-const express = require('express');
-const app = express();
+    ```
+    >mkdir express-project
+    >cd express-project
+    >npm init --yes
+    >npm install express
+    >touch index.js
+    ```
+1. サーバーの作成  
+    以下コートでサーバーの作成をします。
+    ```javascript
+    const express = require('express');
+    const app = express();
 
 // getリクエストでマッチしたものに応じた処理を決められる
 // 上から順に見ていくので記述する順番に注意
