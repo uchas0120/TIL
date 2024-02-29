@@ -169,7 +169,13 @@ app.get('/search', (req, res) => {
 アクセス先：`http://localhost:3000/search?q=HarryPotter`  
 結果：「HarryPotter」の検索結果
 
-
+### テンプレートファイルに外からデータを渡す
+リクエストを受け付けた時に、ejsファイルなどでレンダリングしてもらうことが出来ます。  
+expressからテンプレートファイルにデータを渡すには「res.render」メソッドの第2引数に、JavaScriptのオブジェクト形式で渡したいデータをセットします。(第2引数は指定せずともレンダリング自体は可能です。)  
+※このファイルは views ディレクトリの配下に置いてください。(Expressはrenderの際にデフォルトで views ディレクトリを見に行くため。)  
+書き方：` res.render('ファイル名', {data: ‘外から渡された値です’});`
+ejsファイルで以下のように書くことでデータを埋め込めます。  
+`<p><%= data %></p>`
 
 ### 参考
 [Express.js完全入門](https://qiita.com/ryome/items/16659012ed8aa0aa1fac)
