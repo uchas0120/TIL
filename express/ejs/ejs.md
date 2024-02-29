@@ -57,14 +57,16 @@ app.get('/', (req, res) => {
 ループ文を書いてみます。  
 index.js
 ```
+app.set("view engine", "ejs");
 app.get('/cats', (req, res) => {
     const cats = [
         'タマ', 'タタ', 'トト', 'ドド'
     ];
+// オブジェクトでキーと値の名前が同じな場合、値を省略できる
     res.render('cats', {cats});
 });
 ```
-cats.ejs
+cats.ejs　(views/cats)
 ```ejs
 <!DOCTYPE html>
 <html lang="en">
@@ -83,3 +85,10 @@ cats.ejs
 </html>
 ```
 このように出力したい部分は出力タグ、ロジックの部分はスクリプトタグを使います。
+
+## 静的ファイルを読み込む場合
+[Express での静的ファイルの提供](https://expressjs.com/ja/starter/static-files.html)
+静的ファイルを公開し、ejsファイルと紐づけることでレスポンスでHTML,CSS,JSのファイルを返すことが出来ます。  
+書き方；`app.use(express.static('ディレクトリパス'));`  
+`app.use`メソッドはすべてのリクエストで処理を走らせることが出来ます。  
+
