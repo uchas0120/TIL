@@ -86,7 +86,7 @@ app.get('/r/:subreddit', (req, res) => {
 });
 ```
 
-- views/subreddit.ejs
+- views/subreddit.ejs(expressはデフォルトでviewsフォルダーを見に行くため、その中にsubreddit.ejsを作成。)
 ```ejs
 <!DOCTYPE html>
 <html lang="en">
@@ -113,6 +113,22 @@ app.get('/r/:subreddit', (req, res) => {
     <%    } %>
         </article>
     <% } %>
+</body>
+</html>
+```
+
+- views/NotFound
+```ejs
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NotFound</title>
+</head>
+<body>
+    <h1>NotFound</h1>
+    <h2><%= subreddit %>のページは存在しません。</h2>
 </body>
 </html>
 ```
