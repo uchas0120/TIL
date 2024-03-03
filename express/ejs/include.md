@@ -7,7 +7,7 @@ ejsファイルでは、コードをテンプレート化することが出来�
 ## 使ってみる
 テンプレート用の partialsフォルダを作成後、その中にヘッダーをテンプレート化した head.ejs をいれています。  
 その head.ejs をhome.ejsに読み込むことで、ヘッダーをレンダリングさせることが出来ます。  
-index.js
+- index.js
 ```javascript
 const path = require('path');
 const express = require('express');
@@ -23,7 +23,7 @@ app.listen(3000, () => {
     console.log('リクエストをポート3000で待受中...');
 });
 ```
-partials/head.ejs
+- partials/head.ejs
 ```ejs
 <!DOCTYPE html>
 <html>
@@ -39,7 +39,7 @@ partials/head.ejs
     <script src="/js/bootstrap.min.js"></script>
 </head>
 ```
-views/home.ejs
+- views/home.ejs
 ```ejs
 // ヘッダー部分を読み込み。
 <%- include('partials/head'); %>
