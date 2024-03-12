@@ -68,9 +68,10 @@ updateの第二引数には`$set`必須。
 `db.collections.replaceOne()`  
 
 ### Delete（削除）
-第一引数に一致したコレクションを削除します。
-`db.collections.deleteOne()`
-`db.collections.deleteMany()` 何も指定しないと全部削除です。
+第一引数に一致したコレクションを削除します。  
+ 何も指定しないと全部削除です。  
+`db.collections.deleteOne()`  
+`db.collections.deleteMany()`  
 ```
 > db.dogs.deleteOne({name: 'はち'})
 ```
