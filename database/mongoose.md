@@ -167,8 +167,8 @@ Promise {
 保存されたかは`mongo`でシェルに入って確認するといいです。  
 
 ## 削除
-https://mongoosejs.com/docs/5.x/docs/api/model.html
-`> Movie.deleteOne({title: 'Amelie'}).then(res => console.log(res))`
+https://mongoosejs.com/docs/5.x/docs/api/model.html  
+`> Movie.deleteOne({title: 'Amelie'}).then(res => console.log(res))`  
 findOneAndDelete()とかfindByIdAndDelete()もあります。
 
 ## 自分のメソッドを定義
